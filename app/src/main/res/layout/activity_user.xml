@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:weightSum="10"
+    tools:context=".activity.UserActivity">
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_weight="0.3"
+        android:id="@+id/spAddress_User"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.appcompat.widget.AppCompatSpinner>
+
+    <EditText
+        android:layout_marginTop="8dp"
+        android:id="@+id/edtId_User"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:hint="ID"></EditText>
+
+    <EditText
+        android:id="@+id/edtFullName_User"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_weight="0.3"
+        android:hint="Full Name"></EditText>
+
+    <EditText
+        android:id="@+id/edtUsername_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_weight="0.3"
+        android:hint="Username"></EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_weight="0.3"
+        android:onClick="addUser"
+        android:text="Add"></Button>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_weight="8.5"></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
